@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: whitesmoke;
+}
+.header{
+  width: 100%;
+}
+.Background{
+  width: 100%;
+}
+
+/*Mobile*/
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content .box1, .box2, .box3, .box4, .box5{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.content .News,.Bend,.TeamRoyal,.InConcert{
+  width: 90%;
+}
+.content .News a, .Bend a,.TeamRoyal a,.InConcert a{
+  width: 80%;
+  margin-top: 10px;
+}
+.content .News .Newsimg, .Bend .Bendimg,.TeamRoyal .TeamRoyalimg, .InConcert .InConcertimg{
+  width: 100%;
+  border-radius: 20px;
+}
+.content .Logo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content .Logo .Logoimg{
+  width: 80%;
+}
+/*Btn design*/
+.content .Newsbtn,.TeamRoyalbtn,.Bendbtn,.InConcertbtn{
+ background-color: black;
+ font-size: 14px;
+ padding: 5px 10px;
+ border: 0;
+}
+.content .Newsbtn a,.TeamRoyalbtn a,.Bendbtn a,.InConcertbtn a{
+  font-weight: bold;
+  color: whitesmoke;
+  font-style: italic;
+  text-decoration:none;
+}
+.content .Newsbtn a:hover,.TeamRoyalbtn a:hover,.Bendbtn a:hover,.InConcertbtn a:hover{
+  text-decoration:underline;
+}
+/*Btn position*/
+.content .box1 .Newsbtn{
+  position: relative;
+  bottom: 30px;
+}
+.content .box2 .TeamRoyalbtn{
+  position: relative;
+  bottom: 30px;
+  right: 30%;
+}
+.content .box4 .Bendbtn{
+  position: relative;
+  bottom: 25px;
+}
+.content .box5 .InConcertbtn{
+  position: relative;
+  bottom: 100px;
+  left: 37%;
+}
+  
+
+/*iPad*/
+@media only screen and (min-width: 768px){
+  .content .Newsbtn,.TeamRoyalbtn,.Bendbtn,.InConcertbtn{
+    font-size: 20px;
+   }
+   .content .box1 .Newsbtn{
+    bottom: 50px;
+  }
+  .content .box2 .TeamRoyalbtn{
+    bottom: 50px;
+    right: 40%;
+  }
+  .content .box4 .Bendbtn{
+    bottom: 45px;
+  }
+  .content .box5 .InConcertbtn{
+    left: 40%;
+  }
+}
+
+/*Full screen*/
+@media only screen and (min-width: 1000px){
+  .content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .First_row_FelxBox{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .Second_row_FlexBox{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .First_row_FelxBox{
+    align-items: stretch;
+  }
+
+  .First_row_FelxBox .box3 .Logo{
+    align-items: stretch;
+    height: 100%;
+    width: 95%;
+  }
+  .First_row_FelxBox .box3 .Logo .Logoimg{
+    width: 100%;
+    border-radius: 30px;
+  }
+  .First_row_FelxBox .Box_Container1 .box2 .TeamRoyal{
+    align-items: stretch;
+    height: 100%;
+  }
+
+  .Second_row_FlexBox{
+    align-items: stretch;
+  }
+  .Second_row_FlexBox .box4 .Bend{
+    align-items: stretch;
+    height: 100%;
+    width: 90%;
+  }
+  .Second_row_FlexBox .box4 .Bend .Bendimg{
+    height: 100%;
+  }
+  .Second_row_FlexBox .box5 .InConcert{
+    align-items: stretch;
+    height: 100%;
+    width: 95%;
+  }
+  .content .Newsbtn,.TeamRoyalbtn,.Bendbtn,.InConcertbtn{
+    width: 200px;
+  }
+  /*Btn position*/
+
+.content .box2 .TeamRoyalbtn{
+  position: relative;
+  bottom: 70px;
+  left: 37%;
+}
+.content .box4 .Bendbtn{
+  position: relative;
+  left: 40%;
+  bottom: 70px;
+}
+.content .box5 .InConcertbtn{
+  position: relative;
+  bottom: 100px;
+  left: 37%;
+}
+  
+}

@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header{
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.header span h3{
+ font-style: arial;
+}
+.Background{
+  width: 100%;
+}
+.content{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.content article{
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.content article img{
+  margin-left: 50px;
+  width: 30%;
+  height: auto;
+}
+.content article .description{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content article .description p{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.content article .description .date{
+  font-size: 15px;
+  margin-top: 30px;
+}
+.content article .description .button{
+  background-color: goldenrod;
+  font-size: 15px;
+  margin: 20px 0;
+  padding: 8px 12px;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+}
+.content article .description .button a{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px 15px;
+  width: 50%;
+  border: 0;
+  color: whitesmoke;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+.content article .description .button a:hover{
+  color: black;
+}
+@media only screen and (max-width: 768px){
+  .content article{
+    flex-direction: column;
+  }
+  .content article img{
+    margin: 0px 0px 0px 0px;
+    width: 80%;
+    height: 60%;
+  }
+  .content article .description p{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .content article .description .date{
+    font-size: 20px;
+  }
+ 
+}
+@media only screen and (max-width: 475px){
+  .content article{
+    flex-direction: column;
+  }
+  .content article img{
+    margin: 0px 0px 0px 0px;
+    width: 80%;
+    height: 40%;
+  }
+  .content article .description p{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .content article .description .date{
+    font-size: 15px;
+  }
+  .content article .description .button{
+    width: 50%;
+  }
+  .content article .description .button a{
+    font-size: 12px;
+  }
+
+}

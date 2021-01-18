@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+   background-color: black; 
+}
+/*Position*/
+.skewbox {
+    background-color: goldenrod;
+    padding: 100px 0;
+    transform: skew(0deg, -10deg) translateY(-120px);
+}
+.skewbox h1{
+    font-size: 50px;
+    font-style: italic;
+}
+.menu{
+    position: relative;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+/*menu design*/
+.menu ol{
+    list-style: none;
+    display: block;
+    width: auto;
+    margin-right: 100px;
+}
+.menu ol li a{
+    color: goldenrod;
+    font-size: 25px;
+    padding: 15px 20px;
+    text-decoration: none;
+    position: relative;
+    display: block;  
+}
+.menu ol li a .fa{
+    padding-right: 40px;
+}
+.menu ol li a:before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: whitesmoke;
+    left: 0;
+    top: 0;
+    transition: .3s;
+    opacity: 0;
+}
+.menu ol li a:hover{
+    color: whitesmoke;
+    background-color:grey;
+}
+.menu ol li a:hover:before{
+    opacity: 1;
+}
+.Social-menu{
+    position: relative;
+    top: 200px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+/*Socila design*/
+.Social-menu ul{
+    display: flex;
+    margin-right: 20px;
+    flex-direction: row;
+    list-style: none;
+}
+.Social-menu a{
+    text-decoration: #fff;
+}
+.Social-menu .fa{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    text-align: center;
+    color:white;
+    box-shadow: 2px 3px 4px #4c3333;
+  }
+.Social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+  }
+.Social-menu ul li a{
+    transition: .6s;
+    display: flex;
+  }
+.Social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+/*iPad*/
+@media only screen and (max-width: 768px){
+    .skewbox h1{
+        position: relative;
+        top: 30px;
+        font-size: 40px;
+    }
+}
+/*Mobile*/
+@media only screen and (max-width: 475px){
+    
+    .skewbox h1{
+        position: relative;
+        top: 50px;
+        font-size: 25px;
+    }
+    .menu{
+        top: 30px;
+        justify-content: center;
+    }
+    .menu ol{
+        top: 30px;
+        margin-right: 0px;
+    }
+    .menu ol li a{
+        font-size: 20px;
+    }
+    .Social-menu{
+        top: 50px;
+        justify-content: center;
+    }
+    .Social-menu ul{
+        margin-right: 0px;
+    }
+    .Social-menu .fa{
+        font-size: 20px;
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+      }
+}

@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color:whitesmoke;
+}
+.header{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.content span h3{
+  font-style: italic;
+  font-size: 40px;
+}
+.content article{
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.content article img{
+  width: 20%;
+  height: 100%;
+}
+.content .NewsRight img{
+  order: 2;
+}
+.content article .description{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.content article .description li{
+  list-style: none;
+}
+.content article .description li a{
+  text-decoration: none;
+}
+.content article .description li a h3{
+  font-size: 25px;
+  color: black;
+}
+.content article .description p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.content article .description .button{
+  background-color: goldenrod;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 8px 12px;
+  width: 200px;
+  height: 40px;
+  border: 0;
+  border-radius: 10px;
+}
+.content article .description .button a{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border: 0;
+    color: whitesmoke;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+.content article .description .button a:hover{
+  color: black;
+}
+@media only screen and (max-width: 475px){
+  .content article img{
+    width: 40%;
+    height: 100%;
+  }
+  .content span h3{
+    font-size: 25px;
+  }
+  .content article .description li a h3{
+    font-size: 12px;
+  }
+  .content article .description p{
+    font-size: 10px;
+  }
+  .content article .description .button{
+    font-size: 12px;
+    height: 25px;
+    width: 120px;
+    padding: 0px 0px;
+  }
+  .content article .description .button a{
+    font-size: 10px;
+    padding: 0px 0px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .content article img{
+    width: 40%;
+    height: 100%;
+  }
+}

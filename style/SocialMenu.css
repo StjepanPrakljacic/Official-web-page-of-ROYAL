@@ -1,0 +1,21 @@
+.Social-menu .fa-facebook{
+    background-color: #3b5999;
+}
+.Social-menu .fa-facebook:hover{
+    color: #3b5999;
+}
+.Social-menu .fa-instagram{
+     background-color: #e4405f;
+}
+.Social-menu .fa-instagram:hover{
+    color: #e4405f;
+}
+.Social-menu .fa-youtube-play{
+    background-color: #cd201f;
+}
+.Social-menu .fa-youtube-play:hover{
+    color: #cd201f;
+}
+.Social-menu .fa:hover{
+    background-color:white;
+}
